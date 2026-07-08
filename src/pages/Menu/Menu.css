@@ -1,0 +1,73 @@
+.menu-page {
+  padding: 4rem 1rem;
+}
+
+.menu-inner {
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+.menu-title {
+  margin: 0 0 0.5rem;
+  font-family: 'Markazi Text', serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: var(--color-primary-green, #495e57);
+}
+
+.menu-intro {
+  margin: 0 0 2rem;
+  color: #666;
+}
+
+.menu-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: 1fr;
+}
+
+.menu-card {
+  padding: 1.25rem;
+}
+
+.menu-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.5rem;
+}
+
+.menu-card-title {
+  margin: 0;
+  font-family: 'Markazi Text', serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--color-highlight-dark, #333);
+}
+
+.menu-card-price {
+  font-weight: 700;
+  color: var(--color-secondary-orange, #ee9972);
+}
+
+.menu-card-desc {
+  margin: 0;
+  color: #666;
+  line-height: 1.5;
+}
+
+@media (min-width: 600px) {
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .menu-page {
+    padding: 4rem 2rem;
+  }
+
+  .menu-title {
+    font-size: 3rem;
+  }
+}
