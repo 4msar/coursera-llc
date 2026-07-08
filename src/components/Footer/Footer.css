@@ -1,0 +1,120 @@
+.site-footer {
+  background-color: var(--color-highlight-dark);
+  color: var(--color-white);
+  padding: 2.5rem 1rem 0;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.footer-logo {
+  display: block;
+  max-width: 140px;
+  height: auto;
+}
+
+.footer-heading {
+  font-family: var(--font-heading);
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-primary-yellow);
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.footer-links a {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color var(--transition-fast), padding-left var(--transition-fast);
+  padding: 0.15rem 0;
+}
+
+.footer-links a:hover {
+  color: var(--color-primary-yellow);
+  padding-left: 4px;
+}
+
+.footer-links a:focus-visible {
+  outline: 2px solid var(--color-primary-yellow);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+.footer-address {
+  font-style: normal;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.footer-address p {
+  margin: 0;
+}
+
+.footer-address a {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.footer-address a:hover {
+  color: var(--color-primary-yellow);
+}
+
+.footer-address a:focus-visible {
+  outline: 2px solid var(--color-primary-yellow);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+.footer-hours {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.footer-bottom {
+  margin-top: 2rem;
+  padding: 1rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media (min-width: 600px) {
+  .footer-inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .footer-inner {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .site-footer {
+    padding: 3rem 1rem 0;
+  }
+}
