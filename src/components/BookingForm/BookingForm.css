@@ -1,0 +1,31 @@
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background-color: var(--color-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.booking-form-title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+  color: var(--color-highlight-dark);
+  text-align: center;
+}
+
+@media (min-width: 480px) {
+  .booking-form {
+    padding: 2rem;
+    max-width: 32rem;
+  }
+
+  .booking-form-title {
+    font-size: 1.75rem;
+  }
+}
