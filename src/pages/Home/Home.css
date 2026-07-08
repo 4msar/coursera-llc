@@ -1,0 +1,138 @@
+.home-about {
+  padding: 2.5rem 1rem;
+  background-color: var(--color-white);
+}
+
+.home-about-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.home-about-content {
+  flex: 1;
+  text-align: center;
+}
+
+.home-about-title {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-primary-yellow);
+  margin: 0;
+  line-height: 1.1;
+}
+
+.home-about-subtitle {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--color-highlight-dark);
+  margin: 0.25rem 0 1rem;
+}
+
+.home-about-text {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--color-text);
+  margin: 0 0 0.75rem;
+}
+
+.home-about-images {
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  aspect-ratio: 6 / 7;
+}
+
+.home-about-img {
+  position: absolute;
+  border-radius: var(--radius-lg);
+  object-fit: cover;
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.home-about-img:hover {
+  transform: scale(1.02);
+  box-shadow: var(--shadow-lg);
+  z-index: 2;
+}
+
+.home-about-img--a {
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 85%;
+}
+
+.home-about-img--b {
+  bottom: 0;
+  right: 0;
+  width: 68%;
+  height: 72%;
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .home-about {
+    padding: 3rem 1rem 4rem;
+  }
+
+  .home-about-inner {
+    flex-direction: row;
+    text-align: left;
+    gap: 3rem;
+  }
+
+  .home-about-content {
+    text-align: left;
+  }
+
+  .home-about-title {
+    font-size: 3rem;
+  }
+
+  .home-about-subtitle {
+    font-size: 1.75rem;
+  }
+
+  .home-about-images {
+    flex-shrink: 0;
+    width: 360px;
+    height: 420px;
+    aspect-ratio: auto;
+  }
+
+  .home-about-img--a {
+    width: 300px;
+    height: 380px;
+  }
+
+  .home-about-img--b {
+    width: 250px;
+    height: 310px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home-about-images {
+    width: 400px;
+    height: 460px;
+  }
+
+  .home-about-img--a {
+    width: 330px;
+    height: 410px;
+  }
+
+  .home-about-img--b {
+    width: 270px;
+    height: 340px;
+  }
+}
