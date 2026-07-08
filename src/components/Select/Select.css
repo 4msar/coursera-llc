@@ -1,0 +1,55 @@
+.select-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.select-label {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--color-highlight-dark);
+}
+
+.select-field {
+  width: 100%;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--color-highlight-dark);
+  background-color: var(--color-white);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23333' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  padding-right: 2.25rem;
+}
+
+.select-field:focus {
+  outline: none;
+  border-color: var(--color-primary-green);
+  box-shadow: 0 0 0 3px rgba(73, 94, 87, 0.2);
+}
+
+.select-field:hover:not(:focus):not(.select-field--error) {
+  border-color: #999;
+}
+
+.select-field--error {
+  border-color: var(--color-error);
+}
+
+.select-field--error:focus {
+  box-shadow: 0 0 0 3px rgba(185, 28, 28, 0.2);
+}
+
+.select-error {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  color: var(--color-error);
+  min-height: 1.2em;
+}

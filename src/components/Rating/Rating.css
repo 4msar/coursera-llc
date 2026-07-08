@@ -1,0 +1,20 @@
+.rating {
+  display: inline-flex;
+  gap: 0.15rem;
+  align-items: center;
+}
+
+.rating-star {
+  font-size: 1.25rem;
+  color: var(--color-border);
+  line-height: 1;
+  transition: color var(--transition-fast), transform var(--transition-fast);
+}
+
+.rating-star--filled {
+  color: var(--color-primary-yellow);
+}
+
+.rating:hover .rating-star--filled {
+  transform: scale(1.1);
+}
